@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF=8">
+        <title>Atividade Avaliativa</title>
+        <link rel="stylesheet" href="CSS/estilo.css">
+    </head>
+    <header>
+        <button id="botao1">Cor 1</button>
+        <button id="botao2">Cor 2</button>
+        <button id="botao3">Cor 3</button>
+    </header>
+    <body>
+        <div id="conteudo">
+            <h1 id="text1">Deixe seu Recado!</h1>
+            <spam id="nome">Nome: </spam>
+            <input id="input1" type="text"> <br>
+            <spam id="msg">Mensagem: </spam>
+            <input id="input2" type="text"> <br>
+            <button id="btnEnviar">Enviar</button>
+
+        </div>
+
+        <div id="conteudo2">
+
+        </div>
+    </body>
+    <footer>
+        <button id="creditos">Créditos</button>
+    </footer>
+
+    <script>
+        var botao1 = document.querySelector('#botao1')
+        var botao2 = document.querySelector('#botao2')
+        var botao3 = document.querySelector('#botao3')
+        var btnEnviar = document.querySelector('#btnEnviar')
+        var input1 = document.querySelector('#input1')
+        var input2 = document.querySelector('#input2')
+        var botaoCredito = document.querySelector('#creditos')
+        
+        
+        
+        var quebraLinha = document.createElement('br')
+        var corpo = document.querySelector('body')
+
+        botao1.onclick = function(){
+            var background1 = document.querySelector('body')
+            background1.style.backgroundColor = 'blue'
+            corpo.appendChild(background1)
+        }
+        botao2.onclick = function(){
+            var background2 = document.querySelector('body')
+            background2.style.backgroundColor = 'green'
+            corpo.appendChild(background2)
+        }
+        botao3.onclick = function(){
+            var background3 = document.querySelector('body')
+            background3.style.backgroundColor = 'red'
+            corpo.appendChild(background3)
+        }
+
+        btnEnviar.onclick = function(){
+            
+            var divContainer = document.querySelector('#conteudo2')
+            var divContainer2 = document.createElement('div')
+            var btnExcluir = document.createElement('button')
+            var textElement = document.createTextNode('EXCLUIR')
+            btnExcluir.appendChild(textElement)
+            var conteudo = input1.value + ": " + input2.value
+            divContainer.appendChild(divContainer2)
+            divContainer2.append(conteudo)
+            divContainer2.append(btnExcluir)
+            divContainer2.append(quebraLinha)
+
+            input1.value = ""
+            input2.value = ""
+
+            btnExcluir.onclick = function(){
+                divContainer.removeChild(divContainer2)
+
+            }
+
+        }
+
+        botaoCredito.onclick = function(){
+            var conteudo = "Desenvolvimento de software para web \n Equipe: Carlos Nascimento \n Daniel Maia \n Felipe Gomes"
+
+            alert(conteudo)
+        }
+    </script>
+</html>

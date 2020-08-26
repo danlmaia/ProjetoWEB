@@ -1,0 +1,35 @@
+header{
+   text-align: center;
+}
+
+#conteudo{
+    margin-top: 200px;
+    text-align: left;
+    margin-left: 550px;
+    
+}
+
+#conteudo2{
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 550px;
+}
+
+
+#btnEnviar{
+    text-align: right;
+}
+
+#nome{
+    margin-left: 31px;
+}
+
+
+button{
+    text-align: right;
+}
+
+footer{
+    margin-top: 200px;
+    text-align: center;
+}

@@ -2,10 +2,17 @@ header{
    text-align: center;
 }
 
+body{
+    top: 400px;
+    left:400px;
+    background-color: brown;
+}
+
 #conteudo{
     margin-top: 200px;
     text-align: left;
     margin-left: 550px;
+    background-color: yellow;
     
 }
 
@@ -18,6 +25,7 @@ header{
 
 #btnEnviar{
     text-align: right;
+    margin-left: 26%;
 }
 
 #nome{
@@ -27,6 +35,15 @@ header{
 
 button{
     text-align: right;
+}
+#botao1{
+    background-color: blue;
+}
+#botao2{
+    background-color: green;
+}
+#botao3{
+    background-color: red;
 }
 
 footer{

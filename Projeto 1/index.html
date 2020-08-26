@@ -6,16 +6,16 @@
         <link rel="stylesheet" href="CSS/estilo.css">
     </head>
     <header>
-        <button id="botao1">Cor 1</button>
-        <button id="botao2">Cor 2</button>
-        <button id="botao3">Cor 3</button>
+        <button id="botao1" class="botao"></button>
+        <button id="botao2" class="botao"></button>
+        <button id="botao3" class="botao"></button>
     </header>
     <body>
         <div id="conteudo">
             <h1 id="text1">Deixe seu Recado!</h1>
-            <spam id="nome">Nome: </spam>
+            <spam id="nome" class="text">Nome: </spam>
             <input id="input1" type="text"> <br>
-            <spam id="msg">Mensagem: </spam>
+            <spam id="msg" class="text">Mensagem: </spam>
             <input id="input2" type="text"> <br>
             <button id="btnEnviar">Enviar</button>
 
@@ -65,6 +65,9 @@
             var divContainer2 = document.createElement('div')
             var btnExcluir = document.createElement('button')
             var textElement = document.createTextNode('EXCLUIR')
+            btnExcluir.style.marginLeft = '20px'
+            btnExcluir.style.marginTop = '1%'
+            btnExcluir.style.marginBottom = '1%'
             btnExcluir.appendChild(textElement)
             var conteudo = input1.value + ": " + input2.value
             divContainer.appendChild(divContainer2)

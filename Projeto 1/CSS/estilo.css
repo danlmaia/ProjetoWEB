@@ -2,30 +2,67 @@ header{
    text-align: center;
 }
 
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 136, 0);
+}
+
+.botao{
+    margin: 10px;
+    width: 50px;
+    height: 15px;
+}
+
+#botao1{
+    background-color: blue;
+}
+#botao2{
+    background-color:green;
+}
+#botao3{
+    background-color:red;
+}
+
 #conteudo{
-    margin-top: 200px;
-    text-align: left;
-    margin-left: 550px;
+    margin-top: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+	top: 40px;
+    left:4px;
+    border-radius: 15px;
+	background-color: rgb(212, 212, 212);
+	font-size: 15px;
     
 }
 
 #conteudo2{
-    margin-top: 50px;
-    text-align: left;
-    margin-left: 550px;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+	top: 40px;
+    left:4px;
+    border-radius: 8px;
+	background-color: rgb(212, 212, 212);
+	font-size: 15px;
 }
 
 
 #btnEnviar{
     text-align: right;
+    margin-left: 195px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 #nome{
-    margin-left: 31px;
+    margin-left: 35px;
 }
 
 
 button{
+    border-radius: 5px;
     text-align: right;
 }
 
